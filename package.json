@@ -1,0 +1,29 @@
+{
+  "name": "serverJS",
+  "version": "1.0.0",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "express": "^4.18.2",
+    "finalhandler": "^1.2.0",
+    "serve-favicon": "^2.5.0",
+    "ts-loader": "^9.4.4",
+    "ts-node": "^10.9.1",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  },
+  "main": "src/index.js",
+  "author": "Sergey Matkin",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.17",
+    "@types/node": "^20.4.4",
+    "nodemon": "^3.0.1",
+    "typescript": "^5.1.6"
+  },
+  "scripts": {
+    "watch": "tsc -w",
+    "dev": "nodemon .\\dist\\index.js",
+    "build": "webpack",
+    "start": "webpack serve"
+  }
+}
