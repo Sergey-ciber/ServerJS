@@ -11,7 +11,7 @@
     "webpack": "^5.88.2",
     "webpack-cli": "^5.1.4"
   },
-  "main": "src/index.js",
+  "main": "src/index.ts",
   "author": "Sergey Matkin",
   "license": "MIT",
   "devDependencies": {
@@ -23,7 +23,7 @@
   "scripts": {
     "watch": "tsc -w",
     "dev": "nodemon .\\dist\\index.js",
-    "build": "webpack",
-    "start": "webpack serve"
+    "build": "tsc",
+    "start": "node dist/index.js"
   }
 }
