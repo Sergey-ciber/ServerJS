@@ -16,7 +16,7 @@ const db = {
 }
 
 app.get('/', (req, res) => {
-        res.sendStatus(404)
+        res.send('Hello World')
     }
 )
 
